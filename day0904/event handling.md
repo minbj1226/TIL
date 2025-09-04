@@ -48,3 +48,15 @@ public void actionPerformed(ActionEvent ae){
 ##Window Event 처리
 -java.awt.Frame은 x를 눌러서 종료할 수 없다. javax.swing.jFrame은 x를 클릭하면 객체는 살아있고, 눈에 보이지 않는 상태로 전환된다.
 -java.awt.event.WindowListener 인터페이스를 구현하여, 7개의 abstract method를 모두 Override 한 후, windowClosing() 안에 Window 클래스에서 제공하는 종료 method인 dispose()를 호출한다.
+
+##Keyboard Event 처리
+-키보드의 입력이 가능한 JTextComponent의 하위클래스들은 키보드 이벤트를 처리할 수 있다.
+-Keycode는 키에 대한 유일한 코드값: 대,소문자 코드값이 같다.
+-ASCII code 문자의 값: 대,소문자의 코드값이 다르다.
+-이벤트 처리 객체의 가장 윗 부모 EventObject에는 이벤트를 발생시킨 객체의 주소를 반환하는 getSource() 제공한다.
+-같은 종류의 이벤트를 서로 다른 Component가 발생시키더라도 비교할 수 있다.
+
+문법)
+if(e.getSource()==컴포넌트 객체){
+
+}
