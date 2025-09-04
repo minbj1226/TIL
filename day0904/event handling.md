@@ -1,6 +1,7 @@
 # Event Handling
 
-이벤트 처리란 디자인에서 사용자의 동작에 대한 대비 코드를 준비해두고 실행하는 것을 의미합니다. Java에서는 이벤트 관련 인터페이스와 클래스를 `java.awt.event`와 `javax.swing.event` 패키지에서 제공합니다.
+이벤트 처리란 디자인에서 사용자의 동작에 대한 대비 코드를 준비해두고 실행하는 것을 의미 
+Java에서는 이벤트 관련 인터페이스와 클래스를 `java.awt.event`와 `javax.swing.event` 패키지에서 제공
 
 ## 이벤트의 종류
 
@@ -58,5 +59,6 @@ public void actionPerformed(ActionEvent ae){
 
 문법)
 if(e.getSource()==컴포넌트 객체){
+
 
 }
