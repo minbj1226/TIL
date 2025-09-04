@@ -18,3 +18,24 @@
 2. 사용자가 동작을 수행한다.
 3. JVM이 이벤트를 발생시킨다.
 4. 이벤트 Listener가 이벤트를 받고, 정해진 코드를 수행한다.
+
+## 작성법
+1. 사용자의 동작에 의해 발생하는 이벤트를 처리할 수 있는 XxxListener 구현
+```
+public class Design extends JFrame implements ActionListener{
+```
+2. 생성자안에서 컴포넌틀를 생성/배치
+```
+public Desgin(){
+	JButton jbtn=new JButton("클릭");
+	2-1. 생성된 컴포넌트를 이벤트에 등록
+	컴포넌트명.addXxxListener(이벤트가 발생했을 때 처리할 객체명);
+}
+```
+
+3. XxxListener가 가진 abstract method를 Override
+```
+public void actionPerformed(ActionEvent ae){
+	이벤트가 발생했을 때 사용자에게 제공하는 코드
+}
+```
