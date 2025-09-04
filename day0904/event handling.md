@@ -39,3 +39,12 @@ public void actionPerformed(ActionEvent ae){
 	이벤트가 발생했을 때 사용자에게 제공하는 코드
 }
 ```
+
+##흐름
+1. 사용자가 버튼을 클릭하면
+2. JVM에 이벤트가 전달되면서 등록된 컴포넌트인지 판단
+3. 이벤트에 등록된 버튼이라면 event 객체가 생성된다. Override method를 호출하면서 생성된 event 객체를 arguments로 할당한다.
+
+##Window Event 처리
+-java.awt.Frame은 x를 눌러서 종료할 수 없다. javax.swing.jFrame은 x를 클릭하면 객체는 살아있고, 눈에 보이지 않는 상태로 전환된다.
+-java.awt.event.WindowListener 인터페이스를 구현하여, 7개의 abstract method를 모두 Override 한 후, windowClosing() 안에 Window 클래스에서 제공하는 종료 method인 dispose()를 호출한다.
