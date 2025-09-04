@@ -1,7 +1,7 @@
 MVC pattern이 도입된 Component들
 ==============================
 -JList, JTable, JComboBox 존재
--데이터의 처리, 화면 처리, 이벤트 처리 업무를 구분하여 제공하는 Component들.
+-데이터의 처리, 화면 처리, 이벤트 처리 업무를 구분하여 제공하는 Component
 데이터의 처리: DefaultComboBoxModel
 화면 처리: JComboBox
 이벤트 처리 업무: ActionListener, ItemListener
