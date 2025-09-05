@@ -1,6 +1,7 @@
 # Event Handling
 
-이벤트 처리란 디자인에서 사용자의 동작에 대한 대비 코드를 준비해두고 실행하는 것을 의미합니다. Java에서는 이벤트 관련 인터페이스와 클래스를 `java.awt.event`와 `javax.swing.event` 패키지에서 제공합니다.
+이벤트 처리란 디자인에서 사용자의 동작에 대한 대비 코드를 준비해두고 실행하는 것을 의미 
+Java에서는 이벤트 관련 인터페이스와 클래스를 `java.awt.event`와 `javax.swing.event` 패키지에서 제공
 
 ## 이벤트의 종류
 
@@ -40,16 +41,16 @@ public void actionPerformed(ActionEvent ae){
 }
 ```
 
-##흐름
+## 흐름
 1. 사용자가 버튼을 클릭하면
 2. JVM에 이벤트가 전달되면서 등록된 컴포넌트인지 판단
 3. 이벤트에 등록된 버튼이라면 event 객체가 생성된다. Override method를 호출하면서 생성된 event 객체를 arguments로 할당한다.
 
-##Window Event 처리
+## Window Event 처리
 -java.awt.Frame은 x를 눌러서 종료할 수 없다. javax.swing.jFrame은 x를 클릭하면 객체는 살아있고, 눈에 보이지 않는 상태로 전환된다.
 -java.awt.event.WindowListener 인터페이스를 구현하여, 7개의 abstract method를 모두 Override 한 후, windowClosing() 안에 Window 클래스에서 제공하는 종료 method인 dispose()를 호출한다.
 
-##Keyboard Event 처리
+## Keyboard Event 처리
 -키보드의 입력이 가능한 JTextComponent의 하위클래스들은 키보드 이벤트를 처리할 수 있다.
 -Keycode는 키에 대한 유일한 코드값: 대,소문자 코드값이 같다.
 -ASCII code 문자의 값: 대,소문자의 코드값이 다르다.
@@ -59,4 +60,6 @@ public void actionPerformed(ActionEvent ae){
 문법)
 if(e.getSource()==컴포넌트 객체){
 
+
 }
+
