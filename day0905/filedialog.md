@@ -1,5 +1,5 @@
 # FileDialog
--파일을 열거나, 저장할 
+-파일을 열거나, 저장할 컴포넌트
 -java.awt에서 제공
 -OS에서 제공하는 FileDialog를 사용하는 클래스
 
