@@ -38,13 +38,13 @@ jfc.showSaveDialog(부모컴포넌트);
 JDialog jd=new Jdialog(부모윈도우, "타이틀바 메시지", 모달여부);
 모달여부-true:모달(부모창이 선택x), false:비모달(부모창 선택O)
 
-'''
+```
 public class SubWin extends JDialog{
 	public SubWin(JFrame 부모){
 		super(부모, "타이틀바 메시지", modal);
 	}
 }
-'''
+```
 2.컴포넌트를 생성 배치) BorderLayout 기본 Layout
 jd.add("위치", 컴포넌트);
 
@@ -53,6 +53,6 @@ jd.add("위치", 컴포넌트);
 4.가시화
 
 5.종료처리
-'''
+```
 setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
-'''
+```
