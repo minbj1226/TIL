@@ -17,7 +17,8 @@
 runtime exception은 개발자가 반드시 try~catch로 처리하지 않아도 문법 에러가 발생하지 않는다.
 
 문법)
-```try{
+```
+  try{
 	예외발생예상코드;
   }catch(예외처리 클래스명 객체명){
   	예외가발생했을 때 사용자에게 제공할 코드들,,,
@@ -25,7 +26,8 @@ runtime exception은 개발자가 반드시 try~catch로 처리하지 않아도 
   	예외가 발생했을 때 사용자에게 제공할 코드들,,,
   }finally{
   	사용자에게 반드시 제공되어야할 코드들,,,
-  }```
+  }
+```
  
 *Runtime Exception의 처리(개발자가 try~catch 코드를 누락 가능)
 -ArithmeticException: 수에 관련된 예외, 0으로 나눌 때 발생
