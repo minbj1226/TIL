@@ -11,18 +11,18 @@
 
 16bit stream(한번에 움직이는 데이터 양은 많지만 속도가 느리다): 문자열 데이터를 읽기 위한 스트림
 
-Java I/O Streams
+```Java I/O Streams
 ├─ 8bit Stream (Byte)
-│  ├─ InputStream
-│  │  ├─ FileInputStream
-│  │  ├─ DataInputStream
-│  │  └─ ObjectInputStream
-│  └─ OutputStream
-│     ├─ FileOutputStream
-│     ├─ DataOutputStream
-│     └─ ObjectOutputStream
+│ ├─ InputStream
+│ │ ├─ FileInputStream
+│ │ ├─ DataInputStream
+│ │ └─ ObjectInputStream
+│ └─ OutputStream
+│ ├─ FileOutputStream
+│ ├─ DataOutputStream
+│ └─ ObjectOutputStream
 └─ 16bit Stream (Character)
-   ├─ Reader
-   │  └─ FileReader
-   └─ Writer
-      └─ FileWriter
+├─ Reader
+│ └─ FileReader
+└─ Writer
+└─ FileWriter
