@@ -40,6 +40,22 @@ try {
 }
 ```
  
+### try~with~resources
+- JDK1.7에서 부터 지원하는 문법
+- 개발자가 자원을 해제하지 않아도( close() ) Compiler가 자동으로 try에서 자원을 해제해주는 문법
+- 사용자 자원이 모두 해제되므로 static인 자원 함께 사용할 때 주의해야한다.
+(static 자원에는 사용하지 않는다. System.in, System.out, System.err)
+- 코딩량이 try~catch보다 줄어든다.
+
+#### 문법
+```
+try(자원 사용객체) {
+	자원(IO Stream, network, DB Connection) 사용하는 객체를 사용하는 코드를 정의
+} catch(예외처리클래스명 객체명){
+	예외발생시 사용자에게 제공할 코드.
+}
+```
+ 
 *Runtime Exception의 처리(개발자가 try~catch 코드를 누락 가능)
 - ArithmeticException: 수에 관련된 예외, 0으로 나눌 때 발생
 - ArrayIndexOutOfBoundsException: 배열에 존재하지 않는 인덱스 사용
