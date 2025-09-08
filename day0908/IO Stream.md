@@ -7,20 +7,22 @@
 
 ### stream 상속도
 
-flowchart TD
-    A[8bit Stream (Byte)] --> B[InputStream]
-    A --> C[OutputStream]
+8bit stream(한번에 움직이는 데이터의 양은 적지만 속도가 빠르다): 모든 데이터를 읽기 위한 스트림
 
-    B --> B1[FileInputStream]
-    B --> B2[DataInputStream]
-    B --> B3[ObjectInputStream]
+16bit stream(한번에 움직이는 데이터 양은 많지만 속도가 느리다): 문자열 데이터를 읽기 위한 스트림
 
-    C --> C1[FileOutputStream]
-    C --> C2[DataOutputStream]
-    C --> C3[ObjectOutputStream]
-
-    D[16bit Stream (Character)] --> E[Reader]
-    D --> F[Writer]
-
-    E --> E1[FileReader]
-    F --> F1[FileWriter]
+Java I/O Streams
+├─ 8bit Stream (Byte)
+│  ├─ InputStream
+│  │  ├─ FileInputStream
+│  │  ├─ DataInputStream
+│  │  └─ ObjectInputStream
+│  └─ OutputStream
+│     ├─ FileOutputStream
+│     ├─ DataOutputStream
+│     └─ ObjectOutputStream
+└─ 16bit Stream (Character)
+   ├─ Reader
+   │  └─ FileReader
+   └─ Writer
+      └─ FileWriter
