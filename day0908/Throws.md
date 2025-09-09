@@ -36,3 +36,6 @@ Exception과 같이 최상위 예외로 던지면 문제가 발생할 수 있는
 -개발자가 구현하는 업무에 맞는 이름의 예외처리 클래스를 직접 생성하여 사용하는 것
 -상속으로 구현 (is a)
 -Exception을 상속받아 Compile Exception, Runtime Exception을 상속받아 Runtime Exception을 만들 수 있다.
+
+
+

@@ -115,3 +115,20 @@ try{
 ``File file=new File("삭제할 파일의 경로와 파일명");``
 2.삭제
 ``file.delete()``
+
+*입력의 근원
+
+0.파일 생성
+File file=new File("읽어들일 파일의 경로");
+
+1.스트림 생성
+FileInputStream fis=new FileInputStream(file);
+
+2.파일의 내용읽기
+int readData=fis.read();//연결된 파일에 첫글자 하나 얻기
+
+//파일의 모든 내용 읽기
+int readData=0;
+while((readData=fis.read()) != -1){
+
+}
