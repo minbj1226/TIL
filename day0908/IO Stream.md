@@ -1,4 +1,4 @@
-## IO stream
+# IO stream
 - Java API에서 입력과 출력을 할 수 있는 클래스
 - 단방향 Stream(읽기는 읽기만 가능, 쓰기는 쓰기만 가능)
 - java.io 패키지에서 관련 클래스들을 제공
@@ -18,11 +18,76 @@
 │ │ ├─ DataInputStream
 │ │ └─ ObjectInputStream
 │ └─ OutputStream
-│ ├─ FileOutputStream
-│ ├─ DataOutputStream
-│ └─ ObjectOutputStream
+│ │ ├─ FileOutputStream
+│ │ ├─ DataOutputStream
+│ └─└─ ObjectOutputStream
 └─ 16bit Stream (Character)
 ├─ Reader
 │ └─ FileReader
 └─ Writer
 └─ FileWriter
+```
+
+## 시스템 입력
+
+
+## File 입력
+- 8bit Stream: 대상파일의 종류에 상관없이 깨지지 않게 모두 읽어 들일 수 있다.(파일 복사)
+- 16bit Stream: 독자포멧이 없는 문자열 파일만 읽어 들일 수 있다.
+
+사용법)
+1. 파일에 스트림을 연결하여 파일의 내용을 읽는 일
+``FileInputStream fis=new FileInputStream();``<- String 경로: 입력된 파일의 정보를 얻을 수 없다.
+FileReader fr=new FileReader();<- java.io.File: 입력된 파일의 정보를 얻을 수 있다.
+
+### java.io.File
+java.io.File:파일에 대한 정보를 얻거나, 디렉토리를 생성하는 일, 파일 삭제하는 기능을 구현한 클래스
+
+1.생성)
+File file=new File("파일의 경로");
+
+-파일의 정보 얻기)
+
+2.파일이 존재?
+file.exists()
+
+3.파일의 크기
+file.length()
+
+4.디렉터리
+file.isDirectory()
+
+5.파일
+file.isFile()
+
+6.읽기 가능
+file.canRead()
+
+7.쓰기 가능
+file.canWrite()
+
+8.실행 가능
+file.canExecute()
+
+9.절대 경로
+file.getAbsolutePath() 여러개 존재 가능
+
+-규범 경로
+OS에서 파일에 접근하기 위한 단 하나의 경로
+드라이브 경로가 대문자로만 사용
+
+try{
+ file.getCanonicalPath();
+ }catch(IOException ie){
+ 
+ }
+ 
+10.파일이 존재하는 디렉토리만 얻기
+file.getParent()
+
+11.파일명 얻기
+file.getName()
+
+12.파일의 구분자 얻기
+-OS에 맞게 구분자가 설정
+file.separtor
