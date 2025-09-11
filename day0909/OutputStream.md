@@ -22,3 +22,37 @@ n=> 생성
 
 4.스트림에 기록된 내용을 목적지로 분출
 ``fow.flush()``
+
+*한글 처리
+-8bit stream과 16bit stream을 연결 
+
+1.FileOutputStream 생성) HDD에 파일이 없다면 생성, 있다면 덮어쓴다.
+``FileOutPutStream fos=new FileOutputStream("파일경로");`` 
+
+2.OutputStreamWriter를 사용하여 스트림을 연결
+``OutputStreamWriter osw=new OutputStreamWriter(fos);``
+
+3.스트림에 목적지 파일로 기록할 내용을 쓴다.
+``String str="메시지";``
+``osw.write(str);``
+
+4.스트림의 내용을 목적지로 분출
+``osw.flush();``
+
+5.스트림 끊기
+``osw.close();``
+
+-16bit stream만 사용
+
+1.FileWriter생성) HDD에 파일이 없다면 생성, 있다면 덮어쓴다.
+``FileWriter fw=new FileWriter("경로");``
+
+2.스트림에 목적지 파일로 기록할 내용을 쓴다.
+``String str="메시지";``
+``fw.write(str);``
+
+3.스트림의 내영을 목적지로 분출.
+``fw.flush()``
+
+4.연결 끊기
+``fw.close();``
