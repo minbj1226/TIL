@@ -1,4 +1,4 @@
-##NIO(Non-blocking I/O)
+## NIO(Non-blocking I/O)
 -JDK 1.4부터 도입된 패키지(JDK1.7에서부터 많은 기능 추가되었음)
 -비동기적인 입.출력을 제공하는 클래스
 -기존의 I/O보다 효율적인 다중 연결과 대용량 데이터(Gbyte 이상의 파일을 처리할 때 사용, 물리적인 Memory보다 큰 파일을 처리)를 처리할 때 사용
@@ -6,7 +6,7 @@
 -비동기성(Asynchronous): 입,출력이(작업)이 완료될 때까지 기다리지 않고 다른 작업을 수행하는 것(속도 향상)
 -채널을 통해서 입,출력이 일어나고, 데이터는 버퍼를 통해서 전송된다.
 
-###대용량 텍스트 파일 읽기
+### 대용량 텍스트 파일 읽기
 -java.nio.file Path,Paths,Files 객체 사용
 
 1.내용을 읽어들일 텍스트 파일을 선택
@@ -24,4 +24,12 @@ for(String line:allLines){
 	line //읽어들인 모든행을 출력할 수 있다.
 }
 
-###NIO를 사용한 파일 복사
+### NIO를 사용한 파일 복사
+1.원본파일 선택
+Path originalFile=Path.of("원본파일명");
+
+2.복사할 파일 설정
+Path copyFile=Path.of("복사할파일명");
+
+3.복사
+Files.copy(originalFile, copyFile, 옵션);
