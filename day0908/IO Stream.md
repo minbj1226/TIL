@@ -14,7 +14,7 @@
 
 ```mermaid
 graph TD
-    A[8bit stream<br/>모든 데이터를 읽기 위한 스트림<br/>속도 빠름] --> B[InputStream]
+    A[8bit stream<br/>] --> B[InputStream]
     A --> C[OutputStream]
 
     B --> D[FileInputStream]
@@ -28,7 +28,7 @@ graph TD
 
 ```mermaid
 graph TD
-    J[16bit stream<br/>문자열 데이터를 읽기 위한 스트림<br/>속도 느림] --> K[Reader]
+    J[16bit stream<br/>] --> K[Reader]
     J --> L[Writer]
 
     K --> M[FileReader]
