@@ -1,4 +1,4 @@
-## IO stream
+# IO stream
 - Java API에서 입력과 출력을 할 수 있는 클래스
 - 단방향 Stream(읽기는 읽기만 가능, 쓰기는 쓰기만 가능)
 - java.io 패키지에서 관련 클래스들을 제공
@@ -41,9 +41,9 @@ graph TD
 ```
 
 ## 시스템 입력
+![Stream 상속도](system_Input/.jpg)
 
-
-## File 입력
+### File 입력
 - 8bit Stream: 대상파일의 종류에 상관없이 깨지지 않게 모두 읽어 들일 수 있다.(파일 복사)
 - 16bit Stream: 독자포멧이 없는 문자열 파일만 읽어 들일 수 있다.
 
