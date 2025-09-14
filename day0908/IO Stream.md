@@ -24,7 +24,10 @@ graph TD
     C --> G[FileOutputStream]
     C --> H[DataOutputStream]
     C --> I[ObjectOutputStream]
+```
 
+```mermaid
+graph TD
     J[16bit stream<br/>문자열 데이터를 읽기 위한 스트림<br/>속도 느림] --> K[Reader]
     J --> L[Writer]
 
