@@ -41,9 +41,19 @@ graph TD
 ```
 
 ## 시스템 입력
-![Stream 상속도](images/system_input.png)
+![시스템 입력 다이어그램](images/system_Input.PNG)
 
-### File 입력
+*입력의 근원이 시스템 일 때 값 받기
+```java
+try{
+	int readData=System.in.read()
+	}catch(IOException ie){
+}
+```
+*8bit stream인 InputStream은 한글이 깨진다.
+(stream은 1byte이고, 한글 최소 2byte) => stream을 결합하여 처리 
+
+## File 입력
 - 8bit Stream: 대상파일의 종류에 상관없이 깨지지 않게 모두 읽어 들일 수 있다.(파일 복사)
 - 16bit Stream: 독자포멧이 없는 문자열 파일만 읽어 들일 수 있다.
 
@@ -131,16 +141,18 @@ try{
 *입력의 근원
 
 0.파일 생성
-File file=new File("읽어들일 파일의 경로");
+``File file=new File("읽어들일 파일의 경로");``
 
 1.스트림 생성
-FileInputStream fis=new FileInputStream(file);
+``FileInputStream fis=new FileInputStream(file);``
 
 2.파일의 내용읽기
-int readData=fis.read();//연결된 파일에 첫글자 하나 얻기
+``int readData=fis.read();``//연결된 파일에 첫글자 하나 얻기
 
 //파일의 모든 내용 읽기
+```java
 int readData=0;
 while((readData=fis.read()) != -1){
 
 }
+```
