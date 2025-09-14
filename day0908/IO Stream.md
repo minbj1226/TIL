@@ -41,7 +41,7 @@ graph TD
 ```
 
 ## 시스템 입력
-![Stream 상속도](system_Input/.jpg)
+![Stream 상속도](images/system_input.jpg)
 
 ### File 입력
 - 8bit Stream: 대상파일의 종류에 상관없이 깨지지 않게 모두 읽어 들일 수 있다.(파일 복사)
