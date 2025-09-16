@@ -18,7 +18,7 @@ CUI- ctrl+c
 
 *구현법)
 -상속
-![useThread](./images/usethread.png)
+![useThread](./images/threadIsA.png)
 
 1. Thread 상속
 ``public class MyThread extends Thread {``
@@ -33,3 +33,21 @@ public void run(){
 
 4. 상속관계의 자식 클래스를 객체화
 MyThread mt=new MyThread()
+
+
+1. Runnable 구현
+``public class MyThread implements Runnable{``
+
+2. run method overrid
+```java
+public void run() {
+	3. Thread로 동작해야하는 코드 정의
+	(동시에 실행되어야 하는 코드)
+}
+```
+
+4. Runnable 구현한 클래스를 객체화
+``MyThread mt=new MyThread();``
+
+5. Thread 클래스를 객체화하고 Runnable을 구현한 클래스와 has a 관계를 설정
+``Thread t=new Thread(mt);``

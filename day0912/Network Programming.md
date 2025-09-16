@@ -27,6 +27,17 @@ PORT: 컴퓨터 들고 나는 문
 가급적인 1025~65535 포트 연다.
 PORT 선점(같은 프로그램일지라도 포트는 하나만 사용할 수 있다.)
 
+2.접속자 소켓을 받는다.
+Socket client=server.accept(); //접속자가 있으면 다음으로 진행
+
+클라이언트의 사용법)
+
+1.Socket 생성) -서버의 주소와 PORT 사용하여 생성-
+(생성되자마자 ip의 서버에 포트로 접속시도)
+Socket client=new Socket("서버ip", 서버포트);
+
+
+
 ### OSI 7 Layer Reference Model
 -개방형 시스템에서 데이터를 주고 받는 것을 이해하기 쉽도록 정의한 7계층(실제 네트워크 구성 TCP/IP(4계층) 모델을 사용)
 -상위계층은 하위계층으로 PDU(Protocol Data Unit)를 내려주고 서비스를 요청(Service Request)한다.
