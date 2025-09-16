@@ -29,6 +29,7 @@ public void run(){
 	3. Thread로 동작해야하는 코드 정의
 	(동시에 실행되어야하는 코드)
 }
+```
 
 4. 상속관계의 자식 클래스를 객체화
 MyThread mt=new MyThread()
