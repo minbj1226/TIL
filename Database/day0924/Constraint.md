@@ -86,7 +86,7 @@ create table 테이블명(
  컬럼명 데이터형(크기),
  constraint FK_테이블명_컬럼명 foreign key(적용컬럼명)
  references 참조할 테이블명(참조할 컬럼명) on delete cascade
-
+```
 - on delete cascade: 부모테이블에 레코드가 삭제될 때 참조하는 모든 자식테이블에 레코드를 함께 삭제해야 하는 경우 사용하는 옵션
 - 부모테이블에 컬럼 값을 참조하는 레코드가 존재하면, 부모테이블의 레코드는 삭제되지 않는다.
 - user_constraints DD에서 constraint_type이 'R'로 설정
