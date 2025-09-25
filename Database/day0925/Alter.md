@@ -124,3 +124,32 @@ where 조인조건 and 검색조건
 
 *driving table
 - 조인할 때 키가 되는 테이블
+
+*driving table 선정 기준
+- 관계가 있는 테이블에서는 PK컬럼을 가진 테이블이 되는 것이 좋다.
+- 관계가 없는 테이블에서는 레코드의 수가 적거나, 컬럼의 값이 다양성이 적은 테이블이 되는 것이 좋다.
+
+*outer join
+- 한쪽 테이블에만 레코드가 존재하더라도 조회가 가능한 조인
+- ANSI 문법(left, right, full), 
+Oracle 문법(left, right => full outer join 없다)
+
+문법)
+```sql
+select 		   컬럼명,테이블명.컬럼명,alias명.컬럼명
+from 		   테이블명 alias
+종류 outer join 조인할 테이블명 alias
+on			   조인조건
+```
+
+- Oracle 문법
+- 조인 조건에 (+)를 사용한다.
+- 레코드가 존재하지 않는 컬럼에 (+)를 사용한다.
+- 양쪽엔 (+) 붙일 수는 없다.
+
+문법)
+```sql
+select
+from 테이블명 alias, 조인할 테이블명 alias,,,
+where 조인조건(alias 컬럼명(+) = alias.컬럼명)
+```
