@@ -58,6 +58,7 @@ getConnection(String URL, String id, String pass)
 
 -----------------------------------------------------------------------
 ## DBMS와 JVM 연동
+
 1. 드라이버로딩(java언어로된 DBClient) 
 ``Class.forName("oracle.jdbc.OracleDriver");`` 
 
