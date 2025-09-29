@@ -71,4 +71,27 @@ SID: orcl
 ``String id="아이디;"``
 ``String pass="비번;"``
 			
-Connection con=DriverManager.getConnection(url, id, pass)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+Connection con=DriverManager.getConnection(url, id, pass)
+      
+---------------------------------------------------------                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+## SQL문 생성 객체
+- Statement, PreparedStatement 인터페이스를 제공
+
+*Statement
+- Connection 객체 createStatement()를 호출하여 객체를 얻는다.
+
+``Statement stmt=con.createStatement();``
+- 반환된 객체인 Statement는 SQL문을 알지 못한다.
+- 쿼리문실행: stmt.executeXxx(String sql)
+	- 쿼리문은 실행될 때 마다 계속 생성된다.
+	- 동일 쿼리문이 반복 실행될 때 마다 쿼리문이 생성되므로 효율이 좋지 않다.
+	- SQLInjection 공격에 취약하다.
+	
+*PreparedStatement
+- Connection 객체 prepareStatement(String sql)를 호출하여 객체를 얻을 수 있다.
+``PreparedStatement pstmt=con.prepareStatement(String sql);``
+- 반환된 객체인 PreparedStatement는 SQL문을 안다.
+- 쿼리문실행: stmt.executeXxx(String sql)
+	- 쿼리문은 실행될 때 마다 계속 생성되지 않는다.
+	- 쿼리문에 값이 들어가는 위치를 설정하는 bind변수를 사용한다.
+	
