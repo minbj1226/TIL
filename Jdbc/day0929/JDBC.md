@@ -64,7 +64,7 @@ getConnection(String URL, String id, String pass)
 
 2. 로딩된 드라이버를 사용하여 커넥션 얻기
 ``String url="jdbc:oracle:thin@디비서버위치:포트:SID";``
-디비서버위치: localhost, 127.0.0.1
+디비서버위치: localhost, 127.0.0.1, 설정하게 되면 외부에서도 접속이 가능해진
 포트: 1521
 SID: orcl			
 
@@ -95,3 +95,9 @@ Connection con=DriverManager.getConnection(url, id, pass)
 	- 쿼리문은 실행될 때 마다 계속 생성되지 않는다.
 	- 쿼리문에 값이 들어가는 위치를 설정하는 bind변수를 사용한다.
 	
+*CallableStatement
+- Connection 객체의 prepareCall("{ call 프로시저명(값,,,) }");
+- 프로시저를 호출하기 위한 객체
+- bind변수를 사용할 수 있다.(PreparedStatement의 하위 인터페이스)
+- SQL문은 Procedure 내 정의되고, 자바에서 프로시저를 호출하여 업무처리한 결과를 얻는다.<br>
+=> 자바 코드와 쿼리문이 분리될 수 있다.
