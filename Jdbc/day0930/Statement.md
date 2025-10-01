@@ -34,3 +34,16 @@ if (rowCnt == 1){ 	5.연결 끊기
 ### DAO(Data Access Object) Pattern
 - 업무로직(BO: Business Logic)과 데이터 베이스 코드(DAO)를 분리한 패턴
 :유지보수가 쉬워진다. 
+- 코드의 재사용성 증가
+- 관리가 편의성 향상
+- 단위 테스트의 편의성 증가
+- JDBC, JPA, Hirebernate, MyBatis와 같은 기술과 함께 사용
+
+DAO: DBMS에 대한 작업(쿼리문을 작성하고 실행하는 일)
+- method명은 실행되는 쿼리문을 알 수 있도록 쿼리문을 반영하여 작성
+
+DTO: 화면에서 입력된 값이 DBMS로 전달되거나, DBMS에서 검색된 값이 화면으로 전달될 때 사용하는 클래스
+
+BO: DBMS에 대한 작업을 사용하는 일
+- 업무로직을 정의 하는 일
+- method명을 협업에 업무용어로 작성(쿼리문x)
