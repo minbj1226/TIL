@@ -21,3 +21,22 @@
 StringBuilder sb=new StringBuilder();
 StringBuilder sb2=new StringBuilder("hello");
 ![StringBuilder](./images/StringBuilder.png)
+
+2. method 호출 클래스가 제공하는 일 사용
+- 값 붙이기
+```java
+int i=26;
+sb.append(i);
+
+boolean flag=false;
+sb.append(flag);
+```
+
+- 특정위치에 값 넣기
+``sb.insert(인덱스, 값);``
+
+- 특정위치에 값 삭제
+``sb.delete(시작인덱스, 끝인덱스+1);``
+
+- 문자열 뒤집기(문자열의 순서 변경)
+``sb.reverse();``
