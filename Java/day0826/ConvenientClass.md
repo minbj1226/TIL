@@ -14,8 +14,8 @@
 - 객체가 heap 문자열을 직접 저장한다.(중복 문자열을 저장)
 - 속도가 빠르다.
 
-* StringBuffer: JDK 1.0에서부터 제공, 속도 느림
-* StringBuilder: JDK 1.5에서부터 제공, 속도가 빠름
+*StringBuffer: JDK 1.0에서부터 제공, 속도 느림<br>
+*StringBuilder: JDK 1.5에서부터 제공, 속도가 빠름
 
 1. 객체 생성
 StringBuilder sb=new StringBuilder();
