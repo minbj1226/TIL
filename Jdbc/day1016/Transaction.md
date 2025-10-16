@@ -23,7 +23,7 @@ public int db업무method() throws SQLException{
 ```
 
 4. 호출하는 곳에서 개발자가 목표로한 행수인지를 비교하여 commit, rollback 수행
-
+```Java
 public void useMethod(){
 	int 수행된행수=db업무 method();
 	
@@ -33,3 +33,4 @@ public void useMethod(){
 		con.rollback();
 	}
 }
+```
