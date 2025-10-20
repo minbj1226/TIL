@@ -39,6 +39,7 @@ end;
 ``프로시저명.sql``
 
 ## 3.컴파일
+- sqlplus로 접속하여 컴파일 수행
 ``@경로/파일명.sql``
 
 ## 4.에러보기
@@ -57,4 +58,31 @@ end;
 
 PL/SQL 연산자
 - SQL과 동일
-- 대입연산자: =
+- 대입연산자: :=
+
+## 두수를 더해서 반환하는 procedure
+1. procedure
+```
+create or replace procedure plus(num number, num2 in number, result out number)
+is
+
+begin
+	result:=num+num2;
+end;
+```
+
+2. 저장
+``plus_proc.sql``
+
+3. 컴파일
+``@경로/파일명.sql``
+
+실행)
+4. 바인드 변수 선언(sqlplus)
+``var result number;``
+
+5. 실행(직접 실행)
+``exec plus(10, 20, :result)``
+
+6. 바인드 변수에 저장된 값 출력
+``print result``
