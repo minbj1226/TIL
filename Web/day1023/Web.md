@@ -106,7 +106,7 @@ WAS(Web Application Service): Java EE의 모든 Spec을 서비스 해줄 수 있
 - 본문에서 특정 부분을 강조하여 보여 주는 것	
 - 진하게: `<b>, <strong>`
 
-사용법) <b>내용</b>, <strong>내용</strong>
+사용법) `<b>내용</b>`, `<strong>내용</strong>`
 
 - 크기: `<big>`-HTML5에서 지원하지 않는 태그 -> web browser에서 Rendering은 잘 된다.
 - 작게: `<small>`
