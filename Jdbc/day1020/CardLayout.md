@@ -1,3 +1,5 @@
 # CardLayout
 - 한정적인 공간을 효율적으로 사용하기 위해서(탭과 비슷)
 - Panel에서만 동작.
+
+![CardLayout 배치](images/cardlayout.jpg)
