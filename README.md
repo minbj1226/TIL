@@ -8,6 +8,6 @@
 
 ## 분류
 Java
-- [Java](#border)
+- [Java](#Java/layout.md)
 
 DataBase
