@@ -51,3 +51,5 @@
 *HTML Service
 (images/html.PNG)
 web server: HTML을 가지고 있다가, 요청이 발생하면 HTML을 응답해주는 프로그램
+
+web container: Servlet/JSP를 가지고 있다가, 요청이 발생하면 Servlet/JSP를 HTML로 변환하여(동적으로 생성) 응답해주는 프로그램 
