@@ -37,22 +37,22 @@
 ```
 
 *태그
-- 줄변경: "<br>, <p>"
-- markup: <big>, <small>, <sup>, <sub>, <u>, <strong>, <b>, <mark>, <strike>
-- 글꼴: <font>
-- 이미지: <img>, <map>, <area>
-- 링크: <a>
-- 목록: <ul>, <ol>, <li>, <dl>, <dt>, <dd>
-- 글목록: <h1>~<h6>
-- frame: <frame>
-- 테이블: <table>, <thead>, <tbody>, <tfoot>, <tr>, <th>, <td>
-- HTML Form Control: <form>, <fieldset>, <legend>, <input>, <select>, <option>, <textarea>
-- 특수문자: &nbsp;, &lt;
+- 줄변경: `<br>, <p>`
+- markup: `<big>, <small>, <sup>, <sub>, <u>, <strong>, <b>, <mark>, <strike>`
+- 글꼴: `<font>`
+- 이미지: `<img>, <map>, <area>`
+- 링크: `<a>`
+- 목록: `<ul>, <ol>, <li>, <dl>, <dt>, <dd>`
+- 글목록: `<h1>~<h6>`
+- frame: `<frame>`
+- 테이블: `<table>, <thead>, <tbody>, <tfoot>, <tr>, <th>, <td>`
+- HTML Form Control: `<form>, <fieldset>, <legend>, <input>, <select>, <option>, <textarea>`
+- 특수문자: `&nbsp;, &lt;`
 
 *HTML Service
 (images/html.jpg)
-web server: HTML을 가지고 있다가, 요청이 발생하면 HTML을 응답해주는 프로그램
+web server: HTML을 가지고 있다가, 요청이 발생하면 HTML을 응답해주는 프로그램<br>
 
-web container: Servlet/JSP를 가지고 있다가, 요청이 발생하면 Servlet/JSP를 HTML로 변환하여(동적으로 생성) 응답해주는 프로그램 
+web container: Servlet/JSP를 가지고 있다가, 요청이 발생하면 Servlet/JSP를 HTML로 변환하여(동적으로 생성) 응답해주는 프로그램<br> 
 
-WAS(Web Application Service): Java EE의 모든 Spec을 서비스 해줄 수 있는 프로그램
+WAS(Web Application Service): Java EE의 모든 Spec을 서비스 해줄 수 있는 프로그램<br>
