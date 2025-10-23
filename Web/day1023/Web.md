@@ -21,9 +21,9 @@
 - 언어적인 요소(연산, 제어)가 배제된 그리기(Rendering)하기 위한 언어
 - SGML에서 파생된 언어<br>
 
-(images/system_Input.PNG)
+![html 구조도](images/html.jpg)
 
-*HTML 구조
+### HTML 구조
 ```hmtl
 <!DOCTYPE html>
 <html>
@@ -36,7 +36,7 @@
 </html>
 ```
 
-*태그
+### 태그
 - 줄변경: `<br>, <p>`
 - markup: `<big>, <small>, <sup>, <sub>, <u>, <strong>, <b>, <mark>, <strike>`
 - 글꼴: `<font>`
@@ -49,10 +49,35 @@
 - HTML Form Control: `<form>, <fieldset>, <legend>, <input>, <select>, <option>, <textarea>`
 - 특수문자: `&nbsp;, &lt;`
 
-*HTML Service
-![html 구조도](images/html.jpg)
+### HTML Service
+
 web server: HTML을 가지고 있다가, 요청이 발생하면 HTML을 응답해주는 프로그램<br>
 
 web container: Servlet/JSP를 가지고 있다가, 요청이 발생하면 Servlet/JSP를 HTML로 변환하여(동적으로 생성) 응답해주는 프로그램<br> 
 
 WAS(Web Application Service): Java EE의 모든 Spec을 서비스 해줄 수 있는 프로그램<br>
+
+### 작성순서
+1. 코드 작성
+```hmtl
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>타이틀바에 들어갈내용</title>
+	</head>
+	<body>
+		내용
+	</body>
+</html>
+```
+
+2. 저장
+파일명: 이름.html 또는 이름.htm(Windows 98등 예전 OS는 확장자를 3자 까지만 인식)으로 저장
+
+3. Web Server 실행(eclipse 자동으로 실행)
+
+4. 요청 URL을 사용하여 web server(WAS)에 요청 한다.
+
+### 줄 변경 tag
+- web browser는 \n으로 줄을 변경할 수 없다.
+- `<br>,<br/>`: 줄을 변경할 위치에서 태그를 정의하면 줄을 바꿔서 다음 행을 그린다.
