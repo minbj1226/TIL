@@ -8,6 +8,6 @@
 
 ## 분류
 Java
-- [Java](Java/Variable.md)
+- [Java](Java/day0806/layout.md)
 
 DataBase
