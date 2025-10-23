@@ -20,10 +20,11 @@
 - tag언어(<시작태그>내용</끝태그>)
 - 언어적인 요소(연산, 제어)가 배제된 그리기(Rendering)하기 위한 언어
 - SGML에서 파생된 언어<br>
+
 (images/system_Input.PNG)
 
 *HTML 구조
-```HTML
+```hmtl
 <!DOCTYPE html>
 <html>
 	<head>
