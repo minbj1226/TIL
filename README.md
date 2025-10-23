@@ -9,6 +9,6 @@
 ## 분류
 Java
 - [Java 전체 보기](Java/)
-- [Java - 변수 정리](Java/Variable.md)
+- [Java - 변수 정리](Java/day0806/Variable.md)
 
 DataBase
