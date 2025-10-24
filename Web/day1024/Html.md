@@ -92,9 +92,27 @@
 1. 링크를 설정할 영역을 지정 <- 웹 브라우저에 따라 name 속성의 값을 인식하는 브라우저와 id 속성을 인식하는 브라우저가 존재. name의 속성, id 속성의 값을 동일하게 설정하여 사용
 ```HTML
 <map name="이름" id="아이디">
-	<area shape="영역의 종류" cords="좌표" href="연결할페이지경로" title="풍선도움말" target="이름" alt="엑박일때 보여줄 메시지">
+	<area shape="영역의 종류" coords="좌표" href="연결할페이지경로" title="풍선도움말" target="이름" alt="엑박일때 보여줄 메시지">
 </map>
 ```
 
 2. 이미지에 링크가 설정된 map을 적용
 ``<img src="경로" usemap="#이름"/>``
+
+### frame
+- web browser에서 여러 개의 HTML을 동시에 로딩해야할 때
+- frame, iframe 두 가지가 제공된다.	
+- web browser에 전체를 나눌때 사용한다.
+- 페이지 전체 디자인을 설정할 때 사용.(웹 초기)
+- 여러 개의 html을 동시에 로딩하기 때문에 로딩속도가 떨어진다.
+
+### iframe
+- web browser에 일정 부분을 나눌때 사용한다.
+- web browser 특정 부분에 다른 HTML을 끼워넣어 보여줄 때
+
+사용법)
+``<frame src="보여줄 HTML URL" width="넓이" height="높이" name="이름" frameborder="테두리선 두께" scrolling="스크롤바의 여부"></frame>``	
+- 이름: a tag의 target 속성에서 사용할 이름
+- 스크롤바의 여부: Yes: 스크롤 바 제공, No: 스크롤 바 제공x, Auto: 들어가는 HTML의 크기에 따라 자동으로 제공
+
+``<a href="요청 페이지 URL" target="이름">클릭</a>``
