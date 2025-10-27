@@ -41,9 +41,9 @@ n. 테이블 닫기
 ## 복잡한 모양의 테이블
 - 칸 합치기: colspan="합칠칸의 수"
 
-[!칸 합치기](images/colspan.jpg)
+![칸 합치기](images/colspan.jpg)
 
 - 행 합치기: rowpan="합칠행의 수"
 
-[!칸 합치기](images/rowspan.jpg)
+![칸 합치기](images/rowspan.jpg)
 
