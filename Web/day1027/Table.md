@@ -8,7 +8,7 @@
 
 ``<table border="테두리선의 두께" bordercolor="선의색" width="넓이" heigth="높이" background="바닥이미지" bgcolor="바닥색" align="수평정렬" valign="수직정렬" cellpadding="td안여백" cellspacing="td사이여백">`` 
 
-- <tr>: 행을 시작할 때 사용 (자식태그로 <th>, <td>만 정의할 수 있다.)
+- `<tr>`: 행을 시작할 때 사용 (자식태그로 ``<th>, <td>``만 정의할 수 있다.)
 
 ``<tr height="높이" background="바닥이미지" bgcolor="바닥색" align="수평정렬" valign="수직정렬">``
 
