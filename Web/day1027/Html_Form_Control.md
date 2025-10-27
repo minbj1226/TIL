@@ -33,7 +33,7 @@
 
 4. radio
 ```HTML
-<input type="checkbox" name="이름" id="아이디" class="클래스명" readonly="readonly" disabled="disabled" value="back-end로 전송할 값" checked="checked"/>
+<input type="radio" name="이름" id="아이디" class="클래스명" readonly="readonly" disabled="disabled" value="back-end로 전송할 값" checked="checked"/>
 ```
 
 - name: name 속성의 값이 같아야 그룹으로 묶여진다.
