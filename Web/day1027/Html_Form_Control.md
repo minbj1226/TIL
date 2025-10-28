@@ -35,5 +35,33 @@
 ```HTML
 <input type="radio" name="이름" id="아이디" class="클래스명" readonly="readonly" disabled="disabled" value="back-end로 전송할 값" checked="checked"/>
 ```
-
 - name: name 속성의 값이 같아야 그룹으로 묶여진다.
+
+5. hidden
+- 사용자에게 보여지지 않고 값을 전송할 때
+```HTML
+<input type="hidden" name="이름" value="back-end로 전송할 값" id="아이디명" class="클래스명"/>
+```
+
+6. file
+- 파일을 선택할 때
+```HTML
+<input type="file" name="이름" id="아이디명" class="클래스명"/>
+```
+
+7. button
+- 버튼 모양: 클릭해도 아무런 동작을 하지 않는다.(버튼 라벨이 없다.)
+```HTML
+<input type="button" value="라벨" id="아이디명" class="클래스명"/>
+```
+
+8. 
+- 전송 버튼: 클릭하면 <form> 태그 action 속성에 설정된 back-end 페이지로 값들을 전송하는 일
+	- `<form>` 안에 정의하지 않으면 일이 일어나지 않는다.
+```HTML
+<input type="submit" vlaue="라벨" id="아이디명" class="클래스명"/>
+```
+
+9.
+- 초기화 버튼: 클릭하면 <form> 태그 안에 모든 HTML Form Control의 값들을 초기화.
+	- `<form>` 안에 정의하지 않으면 일이 일어나지 않는다.
