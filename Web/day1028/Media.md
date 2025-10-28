@@ -8,7 +8,10 @@
 
 `<audio>` 사용법)
 - 음악 재생할 때 사용<br>
-``<audio src="음악파일의 경로" controls="controls">당신의 브라우저는 audio 태그를 지원하지 않습니다.</audio>``
+```HTML
+<audio src="음악파일의 경로" controls="controls">당신의 브라우저는 audio 태그를 지원하지 않습니다.
+</audio>
+``
 
 - audio 태그는 지원하나 mp3를 지원하지 않는 웹 브라우저로 접속한 경우
 ```HTML
