@@ -73,7 +73,7 @@ css로 숨김처리를 해서 제공하고, 소스 상에서 영역을 구분하
 1. datalist를 사용할 input 객체 정의(list 속성을 사용)
 ``<input type="text" name="이름" list="datalist 의 아이디"/>`` <- 값이 입력되면 <datalist>의 <option> 중 해당 문자를 가지고 있는 옵션들만 제공된다.
 
-2. data를 제공할 <datalist>를 정의
+2. data를 제공할 `<datalist>`를 정의
 ```HTML
 <datatlist id="아이디">
 	<option value="보여질 값"/>
@@ -86,5 +86,22 @@ css로 숨김처리를 해서 제공하고, 소스 상에서 영역을 구분하
 ## Input type에 추가된 객체들
 - input 태그에는 많은 Form Control들이 추가(web browser에서 지언하지 않으면 text로 보여짐)
 - 날짜 선택(년-월-일)
-``<input type="date" name="이름" id="아이디" class="클래스" value="날짜형식으로된 보여줄 날짜">``
+``<input type="date" name="이름" id="아이디" class="클래스" value="날짜형식으로된 보여줄 날짜"/>``
+- 날짜 선택(년-월)
+``<input type="moth" name="이름" id="아이디" class="클래스" value="년-월"/>``
+- 날짜 선택(년-월-일-시간)
+``<input type="datetime-local" name="이름" id="아이디" class="클래스" value="년-월-일 시간:분"/>``
+- 시간 선택(시간)
+``<input type="time" name="이름" id="아이디" class="클래스" value="시간:분"/>``
+- 색 선택(RGB)
+``<input type="color" name="이름" id="아이디" class="클래스" value="설정할 색 RGB"/>``
+- 범위 설정(마우스를 움직여서 값을 변경할 수 있다.)
+``<input type="range" name="이름" id="아이디" class="클래스" min="최저값" max="최대값" value="현재값"/>``
+- 값을 시각적을 보여줄 때(마우스를 움직여서 값을 변경할 수 없다.)
+``<meter name="이름" id="아이디" class="클래스" min="최저값" max="최대값" value="현재값"/>``
 
+input type="text"로 보여지고 의미적인 용도로 사용되는 form control
+- 전화번호
+``<input type="tel" name="이름" id="아이디" class="클래스"/>``
+- 이메일
+``<input type="email" name="이름" id="아이디" class="클래스"/>``
