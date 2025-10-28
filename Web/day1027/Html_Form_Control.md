@@ -55,13 +55,16 @@
 <input type="button" value="라벨" id="아이디명" class="클래스명"/>
 ```
 
-8. 
+8. submit
 - 전송 버튼: 클릭하면 <form> 태그 action 속성에 설정된 back-end 페이지로 값들을 전송하는 일
 	- `<form>` 안에 정의하지 않으면 일이 일어나지 않는다.
 ```HTML
 <input type="submit" vlaue="라벨" id="아이디명" class="클래스명"/>
 ```
 
-9.
+9. reset
 - 초기화 버튼: 클릭하면 <form> 태그 안에 모든 HTML Form Control의 값들을 초기화.
 	- `<form>` 안에 정의하지 않으면 일이 일어나지 않는다.
+```HTML
+<input type="reset" vlaue="라벨" id="아이디명" class="클래스명"/>
+```
