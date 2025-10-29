@@ -58,3 +58,22 @@
 - 대상: 기업에서 일을 하는 사원
 - 별도의 사용자 교육이 필요
 - 현업의 업무를 알아야 하기 때문에 구현의 난이도가 web site보다 높다.
+
+## CSS 속성
+- 글꼴 관련 속성
+- 글꼴 설정: font-family: 글꼴,,,;
+	- 복합값: 앞에 선언한 글꼴이 접속자에게 적용되지 않으면 뒤에 있는 글꼴로 적용된다.
+	- 값은 글꼴, '글꼴', "글꼴"
+
+- 진하게: font-weight: 값;
+	- Normal: 일반 글자, bold: 진하게
+- 이탤릭: font-style: 값;
+	- Mormal: 일반 글자, italic: 이탤릭체
+- 글자색(전경색-forground-color): color: 값;
+- 글자크기: font-size: 값;
+	- 크기px
+- 밑줄, 취소선, 윗 줄: text-decoration: 값;
+	- none
+	- underline
+	- line-through
+	- overline
