@@ -75,3 +75,23 @@ function 함수명(매개변수=초기값,,,) {
 `length()` -> 함수로 제공되지 않기 때문에 ()를 붙ㅇ이면 error가 발생
 - 문자열 같은지 비교 (==으로만 비교)
 `"문자열".equals(비교할 문자열)` -> 사용 불가
+
+## 지정한 시간에 지정한 함수를 호출하는 함수
+
+`setTimeout(호출할 함수명, ms);`
+
+- 주의: 함수명만 입력하여 setTimeout 함수 안에서 입력받은 함수를 호출할 수 있도록 해 주어야 한다.(First Class Function)
+
+```
+function test() {
+	alert("test function");
+}
+```
+
+```
+function test2(func) {
+	func();
+}
+```
+
+- 호출: `test2(test)`
