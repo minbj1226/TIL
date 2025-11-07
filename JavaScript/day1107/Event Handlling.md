@@ -55,3 +55,28 @@
 
 3. 자식창 닫기
 ``self.close();``
+
+* 부모창에서 자식창으로 값 전달
+- JS에서는 안됨 => Parameter 전송방식을 사용한 JSP에서는 가능
+
+사용법)
+1. 부모창에서 자식창으로 전송할 값을 가져와서
+``var id=document.frm.control명.value;``
+
+2. QueryString에 붙여서 JSP로 요청
+- GET 방식으로 요청할 때 URL 뒤에 ?를 사용하여 붙여서 넘기는 값
+- http://localhost/html_prj/day1107/test.jsp: URL
+- 이름=값&이름=값&이름=값: QueryString
+(http://localhost/html_prj/day1107/test.jsp?이름=값&이름=값&이름=값,,,)
+
+``window.open("test.jsp?id="+id, 창의 아이디, "창속성")``
+
+3. 자식창의 JSP에서 전송되는 QueryString 받기
+- scriptlet: <% String id=request.getParameter("id"); %>
+- EL: ${param.id}
+
+* history 객체
+- web browser에서 이전에 방문한 기록을 사용할 수 있는 객체
+- web browser를 닫으면 기존의 방문 기록은 사라진다
+- 속도 향상(웹 브라우저는 사용자가 방문한 웹 사이트의 HTML을 저장하고, 뒤로가기나 앞으로 가기를 클릭하면 서버로 요청을 보내지 않고 접속자에 다운로드 되었던 HTML을 보여주게 된다)
+
