@@ -97,6 +97,17 @@ for(var i=0; i<sel.length; i++) {
 
 ## HTML Form Control에 값 설정
 - 값 설정
-``<input type="text, password", <textarea>
+``<input type="text, password", <textarea>``
 
+``$("selector").val(값);``
 
+- 상태를 변환(속성 변환)
+	- attr 함수(소스코드에 동적으로 속성이 생성), prop 함수(메모리에 동적으로 속성이 생성)를 사용하여 특정태그에 속성을 설정할 수 있다.
+	- 하나의 태그에 값을 변경하는 것은 속성값의 변경이 잘 된다.
+	- 태그가 다른경우 attr은 속성이 남아 있기때문에 초기화가 안될 수 있다.
+
+- 모든 태그에 속성을 추가하거나, checkbox나 radio의 확인상태를 변경하거나, select의 선택상태를 변경할 때 사용
+
+사용법)
+``$("selector").attr("추가할 속성명", 값); //속성을 한번만 설정할 때``
+``$("selector").prop("추가할 속성명", 값); //속성을 여러번 설정할 때`` 
