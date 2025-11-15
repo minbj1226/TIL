@@ -18,10 +18,11 @@
 	- 장: 사람이 코드 읽기가 편리
 	- 파일명에 .min이 포함되지 않는다.
 - CDN(Content Delivery Network)을 통해서 배포	
+	- 사용자가 있는 위치와 지리적으로 가장 가까운 위치에 있는 복제서버에서 파일을 다운로드 하는 기술
 
 ## jQuery 사용법
 1. CDN이나 다운로드 받을 파일을 외부파일방식으로 연결
-``<script src="js의 URL"></script>``
+``<script src="js의 URL" ></script>``
 
 2. `<script>`을 새로 열어서 코드 작성
 ```
