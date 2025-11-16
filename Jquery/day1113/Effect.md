@@ -19,3 +19,22 @@
 ``$("selector").fadeToggle(ms.function(){반전이 완료 되었을 때 사용자에게 제공할 코드})``
 
 - 말아올리기
+``$("selector").slideUp(ms)``
+``$(“selector”). slideUp(ms,function(){ 말아올림이 완료 되었을 때 사용자에게 제공할 코드})``
+
+- 펼쳐보이기
+``$(“selector”).slideDown(ms)``
+``$(“selector”). slideDown(ms,function(){보임이 완료 되었을 때 사용자에게 제공할 코드})``
+
+- 반전
+``$(“selector”).slideToggle(ms)``
+``$(“selector”).slideToggle(ms,function(){반전이 완료 되었을 때 사용자에게 제공할 코드})``
+
+## 동적으로 자식태그 추가, 삭제
+- 추가: `append()` 함수 사용
+사용)
+``$("selector").append("추가할 태그");``
+
+- 삭제: `remove()` 함수 사용
+사용)
+``$("selector").remove();``
