@@ -8,8 +8,6 @@
 $("selector").on("이벤트종류", 무기명함수(){
 	이벤트가 발생했을 때 처리할 코드
 });
-
-document.getElementById("아이디").addEventListener("click", First Class Function)
 ```
 
 - 이벤트 함수
@@ -36,7 +34,7 @@ is()함수를 사용하면 대상에 대한 속성상태를 얻을 수 있다.(t
 사용법)
 ``$("selector").is(":checked"), $("selector").is(":selected")``
 
-*radio,checkbox
+*radio, checkbox
 - checked 상태일 때만 얻기
 
 ``<input type="checkbox" name="chk" class="chk">a``
@@ -44,20 +42,23 @@ is()함수를 사용하면 대상에 대한 속성상태를 얻을 수 있다.(t
 ``<input type="checkbox" name="chk" class="chk">c``
 
 1. 대상(checkbox)얻기
-``var chkArr=$("[type='checkbox']");````var chkArr=$("[name='chk']")````var chkArr=$(".chk");``
+``var chkArr=$("[type='checkbox']");``
+``var chkArr=$("[name='chk']")``
+``var chkArr=$(".chk");``
 
 ```
 for(var i=0; i<chkArr.length; i++) {
 	if($(chkArr[i]).is(":checked") { //true나 false인 상태를 얻는다.
-		#(chkArr[i]).val() //반복중인 체크박스에 값을 얻는다.
+		$(chkArr[i]).val() //반복중인 체크박스에 값을 얻는다.
 	}
 }
 ```
 
-* each
+*each
 - 배열과 반복문을 합쳐서 정의할 수 있다.
 
 문법)
+- 찾아낸 태그를 바로 반복, 태그를 찾은 후 따로 반복
 - 찾아낸 태그를 바로 반복
 
 ```
@@ -87,11 +88,12 @@ $.each(배열, function(인덱스, 방의 값을 저장할 변수){
 
 ```
 $("selector:eq(인덱스)").함수명();
+$("selector 하위태그:eq(인덱스)").함수명();
 
 var sel=$("selector");
 
 for(var i=0; i<sel.length; i++) {
-	$("selector:eq("+i+")").is(":selected")
+	$("selector option:eq("+i+")").is(":selected")
 }
 ```
 

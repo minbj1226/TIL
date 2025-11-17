@@ -15,17 +15,15 @@
 ## CSS 함수
 - selector로 선택된 대상에 stylesheet를 설정하거나, 설정된 CSS 속성값을 얻을 때 사용
 - tag에 설정된 style값 얻기
-
 ``var 변수명=$("selector").css("속성명")``
 
 - tag에 설정된 style값 설정
-
 ``var 변수명=$("selector").css("속성명","값")``
 
 - style 태그에 정의한 class 속성 사용
-
 ``addClass("클래스명")``
-<style>태그 내의 선언된 class 속성을 jQuery에서 설정할 때 사용하는 함수
+
+<style>태그 내 선언된 class 속성을 jQuery에서 설정할 때 사용하는 함수
 
 사용법)
 
