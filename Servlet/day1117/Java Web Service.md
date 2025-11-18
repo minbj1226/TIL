@@ -110,7 +110,7 @@ Service 하기 위한 설정: 생성된 class파일을 web browser에서 인식�
 - `<servlet-mapping>`노드의`<url-pattern>`에 정의된 URL을 사용하여 Servlet 호출
 - 호출 URL) http://localhost/servlet_prj/이름
 	- localhost: HDD에 hosts 파일을 찾고 localhost에 대응되는 ip address를 얻고 hosts 파일에 없다면 DNS로 요청을 보내서 서버의 ip를 얻는다.
-	- sevlet_prj: HDD에 특정 directory를 웹 브라우저에서 사용하기 위해 server.xml에 <Context docBase="HDD 경로", path="/웹브라우저에서 사용할 이름">
+	- servlet_prj: HDD에 특정 directory를 웹 브라우저에서 사용하기 위해 server.xml에 <Context docBase="HDD 경로", path="/웹브라우저에서 사용할 이름">
 	- 이름: DD에 설정된 이름
 	
 ## servlet 작성순서
