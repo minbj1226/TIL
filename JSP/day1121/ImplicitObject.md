@@ -1,6 +1,6 @@
 # 내장 객체
 - jspService method안에 선언되어 있는 객체들
-- JSP Tag 중 scriptlet (<% %>)과 expression(<%= %>에서만 사용할 수 있는 객체들
+- JSP Tag 중 scriptlet (<% %>)과 expression(<%= %>에서만 사용할 수 있는 객체들)
 
 |내장객체명|데이터 형|하는 일|
 |------|-----|---------------
@@ -21,8 +21,8 @@ URL: web에 존재하는 자원을 요청하는 방식
 ### HTML Form Control 값 받기
 - HTML에서 사용자가 입력한 값을 받기위한 객체들 (`<input>`, `<textarea>`, `<select>`)
 - HTML Form Control에 입력된 값은 web parameter로 전달(parameter 전송방식)
-	- <form 태그에 감싸져 있을 때에 값이 전송>
-	- <form enctype="application/x-www-form-urlencoded">
+	- `<form 태그에 감싸져 있을 때에 값이 전송>`
+	- `<form enctype="application/x-www-form-urlencoded">`
 	- 값은 전송되지만 파일은 전송되지 않는다
 	- 파일을 전송하려면 method="post"로 설정하고 enctype="multipart/form-data"로 설정
 
