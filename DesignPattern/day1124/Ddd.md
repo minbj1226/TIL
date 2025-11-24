@@ -3,7 +3,7 @@
 - 사용자, 관리자, 주문, 결제 같은 업무 영역을 기준으로 나눈다.
 
 ## DDD 필요성
-![기존의 구조](./images/OriginalStructure.png)
+![기존의 구조](../images/OriginalStructure.png)
 
 - 기존의 프로젝트 구조는 다음과 같은 문제를 가지고 있다.
 	- 서비스가 커질수록 Service 계층이 커진다.
