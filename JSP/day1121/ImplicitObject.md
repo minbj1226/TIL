@@ -32,3 +32,6 @@ URL: web에 존재하는 자원을 요청하는 방식
 
 *name 속성에 값이 중복(이름이 중복=>배열로 처리)
 ``String[] 변수명=request.getParameterValues("이름")``
+
+### 이름이 중복되는 HTML Form Control 값 받기
+- checkbox나 이름이 동일한 Form Control
